@@ -15,7 +15,7 @@ function Gallery() {
 
     useEffect(() => {
         setLoading(true);
-        fetch('https://course-api.com/react-tours-project')
+        fetch('https://www.course-api.com/react-tours-project')
         .then(response => response.json())
         .then(data => {
             setTours(data.map((tour) => ({...tour, expanded: false})));
